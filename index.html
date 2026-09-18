@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taliah Kitt | Home</title>
+
+    <style>
+        /* Taliah Kitt */
+        * {
+            box-sizing: border-box;
+        }
+
+        :root {
+            --purple-dark: #1d0f31;
+            --purple: #4f2a70;
+            --lavender: #d8b4f8;
+            --orange: #ff8a24;
+            --orange-light: #ffc46b;
+            --cream: #fff8ef;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Trebuchet MS", Arial, sans-serif;
+            color: var(--cream);
+            background:
+                radial-gradient(circle at 10% 10%, rgba(255, 138, 36, 0.20), transparent 24%),
+                radial-gradient(circle at 90% 20%, rgba(216, 180, 248, 0.18), transparent 24%),
+                linear-gradient(135deg, #140920, var(--purple-dark), #3b1c50);
+            min-height: 100vh;
+        }
+
+        .container {
+            width: min(1100px, 92%);
+            margin: auto;
+            padding: 35px 0 50px;
+        }
+
+        header {
+            text-align: center;
+            padding: 28px 20px;
+            background: rgba(68, 34, 94, 0.86);
+            border: 2px solid var(--orange-light);
+            border-radius: 28px;
+            box-shadow: 0 0 28px rgba(255, 138, 36, 0.20);
+        }
+
+        h1 {
+            margin: 0;
+            color: #ffd19d;
+            font-size: clamp(2.6rem, 7vw, 5rem);
+            text-shadow: 0 3px 0 #7d4695, 0 0 18px rgba(255, 138, 36, 0.45);
+        }
+
+        header p {
+            margin: 10px 0 0;
+            color: #ead2ff;
+            font-size: 1.1rem;
+        }
+
+        .decor {
+            margin-top: 12px;
+            font-size: 1.5rem;
+            letter-spacing: 8px;
+        }
+
+        .main-grid {
+            display: grid;
+            grid-template-columns: minmax(280px, 0.9fr) minmax(350px, 1.1fr);
+            gap: 28px;
+            margin-top: 28px;
+        }
+
+        .card {
+            background: rgba(70, 35, 96, 0.90);
+            border: 2px solid rgba(255, 138, 36, 0.78);
+            border-radius: 28px;
+            box-shadow: 0 14px 35px rgba(0, 0, 0, 0.28);
+        }
+
+        .photo-card {
+            padding: 18px;
+            position: relative;
+        }
+
+        .photo-card img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            min-height: 540px;
+            object-fit: cover;
+            object-position: center top;
+            border-radius: 20px;
+            border: 4px solid var(--lavender);
+        }
+
+        .pumpkin-corner {
+            position: absolute;
+            right: 18px;
+            bottom: 8px;
+            font-size: 4.2rem;
+        }
+
+        .content-card {
+            padding: 30px;
+        }
+
+        h2 {
+            margin-top: 0;
+            color: #ffd19d;
+            font-size: 2rem;
+        }
+
+        .bio {
+            line-height: 1.75;
+            font-size: 1.07rem;
+            padding: 20px;
+            border: 1px dashed var(--lavender);
+            border-radius: 18px;
+            background: rgba(30, 14, 44, 0.58);
+        }
+
+        .courses {
+            margin-top: 24px;
+            padding: 20px;
+            border-radius: 18px;
+            background: linear-gradient(135deg, rgba(216, 180, 248, 0.18), rgba(255, 138, 36, 0.12));
+        }
+
+        .courses h2 {
+            margin-bottom: 12px;
+        }
+
+        .courses ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .courses li {
+            margin: 10px 0;
+            padding: 12px 14px;
+            border-left: 5px solid var(--orange);
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.07);
+            line-height: 1.45;
+        }
+
+        .courses li::before {
+            content: "🎃 ";
+        }
+
+        .course-code {
+            color: #efc9ff;
+            font-weight: bold;
+        }
+
+        .button-row {
+            text-align: center;
+            margin-top: 28px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 14px 24px;
+            border-radius: 999px;
+            color: #281239;
+            background: linear-gradient(90deg, var(--orange), var(--orange-light));
+            border: 3px solid #efc8ff;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 0 18px rgba(255, 138, 36, 0.42);
+        }
+
+        .button + .button {
+            margin-left: 10px;
+        }
+
+        .button:hover {
+            transform: translateY(-2px);
+        }
+
+        footer {
+            text-align: center;
+            color: #d9b8e9;
+            padding-top: 28px;
+        }
+
+        @media (max-width: 800px) {
+            .main-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .photo-card img {
+                min-height: auto;
+            }
+
+            .button + .button {
+                margin-left: 0;
+                margin-top: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>🎃 Taliah Kitt 🎃</h1>
+            <p>Senior Computer Science Major at North Carolina A&amp;T State University</p>
+            <div class="decor">🦇 ✨ 👻 ✨ 🕸️</div>
+        </header>
+
+        <main class="main-grid">
+            <!-- Required image from the img folder -->
+            <section class="card photo-card">
+                <img src="img/img1.jpg" alt="Headshot of Taliah Kitt">
+                <span class="pumpkin-corner">🎃</span>
+            </section>
+
+            <section class="card content-card">
+                <!-- Required short bio -->
+                <h2>🧡 About Me</h2>
+                <p class="bio">
+                    Hi everyone! My name is Taliah Kitt. I am from Wilmington, North Carolina and I am a senior at North Carolina A&amp;T State University. My major is Computer Science. Right now, I am focused on finishing school and preparing for my career. After graduation, I want to work in cyber forensics, hopefully with the government. Some things I like to do in my free time are crochet, cook, read, do makeup, take pictures, and play Minecraft. I’m looking forward to learning more in this class and getting to know everyone!
+                </p>
+
+                <!-- Required course list -->
+                <div class="courses">
+                    <h2>💜 My Fall 2026 Courses</h2>
+                    <ul>
+                        <li><span class="course-code">COMP 322</span> — Internet Systems</li>
+                        <li><span class="course-code">COMP 360</span> — Programming Languages</li>
+                        <li><span class="course-code">CRJS 240</span> — Criminology</li>
+                        <li><span class="course-code">ECEN 375</span> — Computer Architecture and Organization</li>
+                        <li><span class="course-code">FIN 355</span> — Investments</li>
+                    </ul>
+                </div>
+
+                <!-- Required link to introduction.html -->
+                <div class="button-row">
+                    <a class="button" href="introduction.html">🌹 Go to Introduction Page →</a>
+                    <a class="button" href="little_prince.html">🌹 Go to The Little Prince →</a>
+                    <a class="button" href="calculator.html">🌹 Go to The Calculator →</a>
+                </div>
+            </section>
+        </main>
+
+        <footer>🕸️ Fall 2026 🕸️</footer>
+    </div>
+</body>
+</html>

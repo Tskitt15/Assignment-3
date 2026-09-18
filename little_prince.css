@@ -1,0 +1,66 @@
+/* Assignment 2 - Little Prince page */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+}
+
+body {
+    color: #000000;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.page {
+    width: 331px;
+    margin: 0 auto;
+    padding-top: 2px;
+}
+
+.top-rule {
+    width: 325px;
+    height: 4px;
+    margin: 0 0 7px 0;
+    background: #eeeeee;
+}
+
+.little-prince-image {
+    display: block;
+    width: 313px;
+    height: 395px;
+    margin-left: 7px;
+    object-fit: cover;
+}
+
+.passage {
+    width: 324px;
+    margin: 2px 0 0 7px;
+    font-size: 15px;
+    line-height: 14px;
+    font-weight: normal;
+    white-space: nowrap;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.highlight {
+    background-color: #f39a00;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.red {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+.back-link {
+    display: block;
+    margin: 18px 0 24px 7px;
+    color: #0000ee;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 15px;
+}

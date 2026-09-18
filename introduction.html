@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taliah Kitt | Introduction</title>
+
+    <style>
+        /* Assignment 1 - introduction.html - Taliah Kitt */
+        * {
+            box-sizing: border-box;
+        }
+
+        :root {
+            --purple-dark: #1b0d2f;
+            --purple: #4f2a70;
+            --lavender: #d8b4f8;
+            --orange: #ff8a24;
+            --orange-light: #ffc46b;
+            --cream: #fff8ef;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Trebuchet MS", Arial, sans-serif;
+            color: var(--cream);
+            background:
+                radial-gradient(circle at 85% 12%, rgba(255, 138, 36, 0.20), transparent 25%),
+                radial-gradient(circle at 10% 80%, rgba(216, 180, 248, 0.18), transparent 26%),
+                linear-gradient(145deg, #12081f, var(--purple-dark), #3e1d53);
+            min-height: 100vh;
+        }
+
+        .container {
+            width: min(1120px, 92%);
+            margin: auto;
+            padding: 35px 0 50px;
+        }
+
+        header {
+            text-align: center;
+            padding: 28px 20px;
+            background: rgba(68, 34, 94, 0.86);
+            border: 2px solid var(--orange-light);
+            border-radius: 28px;
+            box-shadow: 0 0 28px rgba(255, 138, 36, 0.20);
+        }
+
+        h1 {
+            margin: 0;
+            color: #ffd19d;
+            font-size: clamp(2.5rem, 7vw, 4.8rem);
+            text-shadow: 0 3px 0 #7c4593, 0 0 18px rgba(255, 138, 36, 0.45);
+        }
+
+        header p {
+            color: #ead2ff;
+            font-size: 1.1rem;
+            margin-bottom: 0;
+        }
+
+        .decor {
+            margin-top: 12px;
+            font-size: 1.5rem;
+            letter-spacing: 8px;
+        }
+
+        .main-grid {
+            display: grid;
+            grid-template-columns: minmax(300px, 0.9fr) minmax(390px, 1.1fr);
+            gap: 28px;
+            margin-top: 28px;
+        }
+
+        .card {
+            background: rgba(69, 34, 95, 0.90);
+            border: 2px solid rgba(255, 138, 36, 0.78);
+            border-radius: 28px;
+            box-shadow: 0 14px 35px rgba(0, 0, 0, 0.28);
+        }
+
+        .photos {
+            padding: 18px;
+        }
+
+        .main-photo {
+            width: 100%;
+            height: 540px;
+            object-fit: cover;
+            object-position: center 38%;
+            border-radius: 20px;
+            border: 4px solid var(--lavender);
+            display: block;
+        }
+
+        .second-photo-box {
+            display: grid;
+            grid-template-columns: 140px 1fr;
+            gap: 16px;
+            align-items: center;
+            margin-top: 18px;
+            padding: 14px;
+            background: rgba(29, 14, 43, 0.58);
+            border: 1px dashed var(--lavender);
+            border-radius: 18px;
+        }
+
+        .second-photo-box img {
+            width: 140px;
+            height: 140px;
+            object-fit: cover;
+            border-radius: 18px;
+            border: 3px solid var(--orange);
+        }
+
+        .second-photo-box p {
+            margin: 0;
+            color: #efd8ff;
+            line-height: 1.55;
+        }
+
+        .info {
+            padding: 28px;
+        }
+
+        h2 {
+            margin-top: 0;
+            color: #ffd19d;
+            font-size: 2rem;
+        }
+
+        .intro-text {
+            line-height: 1.7;
+            padding: 18px;
+            margin-bottom: 22px;
+            border-radius: 18px;
+            background: rgba(29, 14, 43, 0.58);
+            border: 1px dashed var(--lavender);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            overflow: hidden;
+            border-radius: 18px;
+            background: rgba(29, 14, 43, 0.58);
+            border: 2px solid var(--orange-light);
+        }
+
+        th,
+        td {
+            padding: 16px;
+            text-align: left;
+            vertical-align: top;
+            line-height: 1.5;
+            border-bottom: 1px dashed rgba(216, 180, 248, 0.58);
+        }
+
+        th {
+            color: #2a1238;
+            background: linear-gradient(90deg, var(--orange), var(--orange-light));
+        }
+
+        td:first-child {
+            width: 28%;
+            color: #efcaff;
+            font-weight: bold;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .button-row {
+            text-align: center;
+            margin-top: 28px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 14px 24px;
+            border-radius: 999px;
+            color: #281239;
+            background: linear-gradient(90deg, var(--orange), var(--orange-light));
+            border: 3px solid #efc8ff;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 0 18px rgba(255, 138, 36, 0.42);
+        }
+
+        footer {
+            text-align: center;
+            color: #d9b8e9;
+            padding-top: 28px;
+        }
+
+        @media (max-width: 850px) {
+            .main-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .main-photo {
+                height: auto;
+            }
+        }
+
+        @media (max-width: 560px) {
+            .second-photo-box {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .second-photo-box img {
+                margin: auto;
+            }
+
+            th,
+            td {
+                padding: 11px 9px;
+                font-size: 0.92rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>👻 More About Me 👻</h1>
+            <p>Taliah Kitt • Computer Science • Cyber Forensics Goals</p>
+            <div class="decor">🕸️ ✨ 🎃 ✨ 🦇</div>
+        </header>
+
+        <main class="main-grid">
+            <!-- Required: at least two images from the img folder -->
+            <section class="card photos">
+                <img class="main-photo" src="img/img2.jpg" alt="Taliah Kitt at an event">
+
+                <div class="second-photo-box">
+                    <img src="img/img3.jpg" alt="Second portrait of Taliah Kitt">
+                    <p>
+                        I love creative hobbies including crochet, cooking, reading, makeup, photography, and Minecraft. I also enjoy learning more about technology and cybersecurity.
+                    </p>
+                </div>
+            </section>
+
+            <section class="card info">
+                <h2>🎃 My Introduction</h2>
+                <p class="intro-text">
+                    I am a senior at North Carolina A&amp;T State University majoring in Computer Science. I am from Wilmington, North Carolina, and I am currently focused on finishing school and preparing for a career in cyber forensics. After graduation, I hope to work in cyber forensics, preferably with the government.
+                </p>
+
+                <!-- Required table: skills, abilities, education, and training -->
+                <h2>💜 Skills, Abilities, Education &amp; Training</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>🎃 Skills</td>
+                            <td>HTML, CSS, programming, cybersecurity fundamentals, and technical problem-solving.</td>
+                        </tr>
+                        <tr>
+                            <td>👻 Abilities</td>
+                            <td>Creative thinking, communication, teamwork, organization, attention to detail, and problem-solving.</td>
+                        </tr>
+                        <tr>
+                            <td>🍬 Education</td>
+                            <td>Senior Computer Science major at North Carolina A&amp;T State University.</td>
+                        </tr>
+                        <tr>
+                            <td>🦇 Training</td>
+                            <td>Coursework in Internet Systems, Programming Languages, Computer Architecture and Organization, Criminology, and Investments, with a career focus in cyber forensics.</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- Required link back to index.html -->
+                <div class="button-row">
+                    <a class="button" href="index.html">← Back to Home Page 🎃</a>
+                </div>
+            </section>
+        </main>
+
+        <footer>✨ Thanks for visiting my page! ✨</footer>
+    </div>
+</body>
+</html>

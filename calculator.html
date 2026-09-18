@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple JavaScript Calculator</title>
+  <style>
+    body { font-family: "Times New Roman", Times, serif; margin: 30px; background: white; color: black; }
+    h1 { margin-bottom: 8px; }
+    button { font-size: 16px; padding: 8px 14px; margin: 10px 0 18px; cursor: pointer; }
+    table { border-collapse: collapse; margin: 18px 0; font-size: 18px; }
+    th, td { border: 2px solid #999; padding: 8px 18px; text-align: center; min-width: 80px; }
+    th { background: orange; }
+    td.operator { background: #ffe0a3; }
+    #status { font-weight: bold; margin: 10px 0; }
+    a { display: inline-block; margin-top: 12px; }
+  </style>
+  <script src="calculator.js" defer></script>
+</head>
+<body>
+  <h1>Simple JavaScript Calculator</h1>
+  <p>Click the button to begin. Enter x, y, and an operator (+, -, *, /, or %). Click Cancel in any prompt to stop and show the summary.</p>
+  <button id="startCalculator" type="button">Start Calculator</button>
+  <div id="status"></div>
+  <div id="results"></div>
+  <div id="summary"></div>
+  <p><a href="index.html">Back to index.html</a></p>
+</body>
+</html>
